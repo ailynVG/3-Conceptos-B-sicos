@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Conceptos básicos</title>
+    </head>
+    <body>
+        <!--Mediante atributos HTML
+            <button onClick="alert('Hola!')">Saludar</button>-->
+
+
+        <button>Saludar</button>
+        <!--Mediante propiedades JavaScript
+        <script>
+            const button = document.querySelector("button");
+            button.onclick = function() {
+            alert("Hola 2!");
+            }
+        </script>-->
+
+        <!--Mediante propiedades JavaScript-->
+        <script>
+            const button = document.querySelector("button");
+            button.addEventListener("click", function() {
+            alert("Hola 3!");
+            });
+        </script>
+
+    </body>
+</html>
